@@ -32,6 +32,7 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
         maven { url 'https://jitpack.io' }
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -53,6 +54,6 @@ project(":core") {
 
     dependencies {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
-        api "tenpatch:tenpatch:4.2.1"
+        api 'com.github.raeleus.TenPatch:tenpatch:5.0.0'
     }
 }
